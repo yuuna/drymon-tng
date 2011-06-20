@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+begin 
+  require 'drymon_tng'
+rescue
+  require 'rubygems'
+  require 'drymon_tng'
+end
+
+
+
+
+filename = DrymonTng::Pne::Get.args
+dpi = DrymonTng::Pne::Get.new(filename)
+dpi.read
+dpi.implement
+dpi.get
+
+

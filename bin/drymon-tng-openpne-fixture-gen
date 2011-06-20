@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+begin 
+  require 'drymon_tng'
+rescue
+  require 'rubygems'
+  rrequire 'drymon_tng'
+end
+
+
+filename = DrymonTng::Pne::Id.args
+id = DrymonTng::Pne::Id.new(filename)
+id.parse
+id.write

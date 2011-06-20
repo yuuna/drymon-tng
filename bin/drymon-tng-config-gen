@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+begin 
+  require 'drymon_tng'
+rescue
+  require 'rubygems'
+  require 'drymon_tng'
+end
+
+DrymonTng::Config.copy
+

@@ -1,0 +1,19 @@
+album/list	opAlbumPlugin	album_list	/album	ANY
+album/listMember	opAlbumPlugin	album_list_member	/album/listMember/:id	GET, HEAD
+album/listMember	opAlbumPlugin	album_list_mine	/album/listMember	ANY
+album/listFriend	opAlbumPlugin	album_list_friend	/album/listFriend	ANY
+album/show	opAlbumPlugin	album_show	/album/:id	GET, HEAD
+album/new	opAlbumPlugin	album_new	/album/new	ANY
+album/create	opAlbumPlugin	album_create	/album/create	POST
+album/edit	opAlbumPlugin	album_edit	/album/edit/:id	GET, HEAD
+album/update	opAlbumPlugin	album_update	/album/update/:id	POST
+album/deleteConfirm	opAlbumPlugin	album_delete_confirm	/album/deleteConfirm/:id	GET, HEAD
+album/delete	opAlbumPlugin	album_delete	/album/delete/:id	POST
+album/add	opAlbumPlugin
+album/insert	opAlbumPlugin
+albumImage/add	opAlbumPlugin	album_image_add	/album/:id/photo/add	GET, HEAD
+albumImage/insert	opAlbumPlugin	album_image_insert	/album/:id/photo/insert	POST
+albumImage/show	opAlbumPlugin	album_image_show	/album/photo/:id	GET, HEAD
+albumImage/edit	opAlbumPlugin	album_image_edit	/album/photo/edit/:id	GET, HEAD
+albumImage/update	opAlbumPlugin	album_image_update	/album/photo/update/:id	POST
+albumImage/delete	opAlbumPlugin	album_image_delete	/album/photo/delete/:id	POST

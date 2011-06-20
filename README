@@ -1,0 +1,43 @@
+Drymon,The Next Generation(drymon-tng)の使い方
+
+require:ruby-1.9.2-p180 and higher
+
+-インストール
+*gitからcloneしてくる
+*必要なモジュールのインストール
+$ bundle install
+*systemへのインストール
+$ rake install
+
+
+-使い方
+
+1.適当なディレクトリをつくる
+$ mkdir tng-test
+$ cd tng-test
+2.openpneから出力してきたaction-listをコピーする
+$ cp ~/action_list ./
+3.ディレクトリの初期セットアップをする
+$ drymon-tng-config-gen
+4.config/openpne.ymlを適切に変更
+$ emacs config/openpne.yml
+5.fixtureのymlを作成する
+args: action_list
+$ drymon-tng-openpne-fixture-gen action_list
+6.fixtureを適切に変更
+$ emacs ./config/openpne_id.yml
+
+* yml生成
+$ drymon-tng-openpne-gen action_list
+yml/以下に生成されます。
+ログはlog/以下に生成されます
+
+* selenium/limeへの変換
+
+$ drymon-tng-selenium ./yml
+$ drymon-tng-lime ./yml
+
+変換時はymlファイル名、もしくはディレクトリを指定する
+
+
+
