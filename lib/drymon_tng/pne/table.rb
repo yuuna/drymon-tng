@@ -24,7 +24,7 @@ module DrymonTng
           end
         end
         data_array.uniq!
-        print "------------ table list ------------"
+        print "------------ table list ------------\n"
         data_array.each do |table_name|
           print table_name
           print "\n"
