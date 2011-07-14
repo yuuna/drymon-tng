@@ -23,7 +23,7 @@ Jeweler::Tasks.new do |gem|
   gem.authors = ["Yuuna Kurita"]
   # dependencies defined in Gemfile
   gem.bindir = 'bin'
-  gem.executables  << 'drymon-tng-openpne-fixture-gen' << 'drymon-tng-openpne-gen' << 'drymon-tng-lime' << 'drymon-tng-selenium' << 'drymon-tng-config-gen'
+  gem.executables  << 'drymon-tng-openpne-fixture-gen' << 'drymon-tng-openpne-gen' << 'drymon-tng-lime' << 'drymon-tng-selenium' << 'drymon-tng-config-gen' << 'drymon-tng-pne-table'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
