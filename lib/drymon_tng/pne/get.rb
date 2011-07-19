@@ -31,6 +31,9 @@ module DrymonTng
         @access_log = Logger.new("./log/access_log")
         @error_log = Logger.new("./log/error_log")
 
+        if @openpne["path"] == "/"
+          @openpne["path"] = ""
+        end
       end
 
       def parse
